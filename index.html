@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello puppy</title>
+    <style>
+        body {
+            padding: 10px;
+        }
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <center>
+        <h1><strong>Do you want something cute?</strong></h1>
+        <button type="button" class="btn btn-primary click">Show me!</button>
+        <img class="img" src="nike.jpg" width="100%" style="display:none; margin-top:15px">
+    </center>
+    <script>
+        const button = document.querySelector('.click');
+        const img = document.querySelector('img');
+        button.addEventListener('click', (e) => {
+            if (e.target.textContent === 'Show me!') {
+                img.style.display = 'block';
+                e.target.textContent = 'Hide';
+            } else {
+                img.style.display = 'none';
+                e.target.textContent = 'Show me!'
+            }
+        });
+    </script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
