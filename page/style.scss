@@ -1,31 +1,47 @@
-
 .carousel {
     margin-bottom: 4rem;
     background-color: gray;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
     bottom: 3rem;
     z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
     height: 32rem;
-  }
+}
 
-  .col-lg-4 img {
-    width: 150px;
-    height: 150px;
+img {
     object-fit: cover;
-  }
-  
-  .col-lg-4 {
+}
+
+.col-lg-4 {
     margin-bottom: 2rem;
-  }
-  
+    text-align: center;
+}
 
 
-  hr {
+.featurette-divider {
     margin: 5rem 0;
+}
+
+
+// force bootstrap responsive image to be square
+.image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+
+.image img {
+    position: absolute;
+}
+
+@media (min-width: 40em) {
+    .featurette-heading {
+      font-size: 50px;
+    }
   }
