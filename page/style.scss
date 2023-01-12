@@ -13,3 +13,19 @@
   .carousel-item {
     height: 32rem;
   }
+
+  .col-lg-4 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+  
+
+
+  hr {
+    margin: 5rem 0;
+  }

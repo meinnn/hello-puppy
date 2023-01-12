@@ -6,27 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPER FLUFFY PUPPY</title>
-    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="paw-print.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-            NIKE
-          </a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Why So Cute?" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+            <a class="navbar-brand" href="#">
+                <img src="paw-print.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                NIKE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Super Fluffy Puppy" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-      </nav>
+    </nav>
 
+    <!-- carousel -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
@@ -62,6 +81,34 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    <!-- columns -->
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="../nike.jpg" class="rounded-circle" width="150" height="150" alt="...">
+                <h2>SUPER</h2>
+                <p>수-퍼 귀여운 강아지! 그것이 바로 우리 나이키이고 귀염둥이의 정의입니다.</p>
+                <button type="button" class="btn btn-secondary">View details ≫</button>
+            </div>
+            <div class="col-lg-4">
+                <img src="../nike2.jpg" class="rounded-circle" width="150" height="150" alt="...">
+                <h2>FLUFFY</h2>
+                <p>복슬복슬! 때로는 꼬질해 보일 수 있지만 오히려 좋습니다.</p>
+                <button type="button" class="btn btn-secondary">View details ≫</button>
+            </div>
+            <div class="col-lg-4">
+                <img src="../nike3.jpg" class="rounded-circle" width="150" height="150" alt="...">
+                <h2>PUPPY</h2>
+                <p>강아지! 귀엽다! 이 강아지는 설명할 것도 없이 몹시 귀여운.</p>
+                <button type="button" class="btn btn-secondary">View details ≫</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- featurette -->
+    <hr>
+
     <script src="../js/bootstrap.bundle.js"></script>
 </body>
 
