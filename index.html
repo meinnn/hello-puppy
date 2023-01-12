@@ -1,60 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello puppy</title>
-    <style>
-        body {
-            padding: 10px;
-        }
-    </style>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER FLUFFY PUPPY</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <center>
-        <h1><strong>Do you want something cute?</strong></h1>
-        <button type="button" class="btn btn-primary click">Show me!</button>
-        <img class="img" src="nike.jpg" width="100%" style="display:none; margin-top:15px">
-    </center>
-    <script>
-        const button = document.querySelector('.click');
-        const img = document.querySelector('img');
-        button.addEventListener('click', (e) => {
-            if (e.target.textContent === 'Show me!') {
-                img.style.display = 'block';
-                e.target.textContent = 'Hide';
-            } else {
-                img.style.display = 'none';
-                e.target.textContent = 'Show me!'
-            }
-        });
-    </script>
-    <p>
-    <div id="disqus_thread"></div>
-    <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://hello-puppy.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a></noscript>
-    </p>
-    <script src="js/bootstrap.bundle.js"></script>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="paw-print.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                NIKE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Super Fluffy Puppy" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./nike.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>이 강아지를 보십시오!</h1>
+                    <p>말로 형용할 수 없게 귀여운! 그것은 더 이상 이 세상의 것이 아닌!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./nike2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>매일 새로운 귀여움!</h1>
+                    <p>이 강아지는 치명적인 귀여움 증가 아이템을 장착할 수 있습니다!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./nike3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h1>귀엽다! 깜찍하다! 예쁘다!</h1>
+                    <p>당신도 이 털뭉치가 귀엽다고 생각하나요? 하지만 그는 나의 강아지 입니다.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- columns -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="./nike.jpg" class="rounded-circle" width="150" height="150" alt="...">
+                <h2>SUPER</h2>
+                <p>수-퍼 귀여운 강아지! 그것이 바로 우리 나이키이고 귀염둥이의 정의입니다.</p>
+                <button type="button" class="btn btn-secondary">View details &raquo;</button>
+            </div>
+            <div class="col-lg-4">
+                <img src="./nike2.jpg" class="rounded-circle" width="150" height="150" alt="...">
+                <h2>FLUFFY</h2>
+                <p>복슬복슬! 때로는 꼬질해 보일 수 있지만 오히려 좋습니다.</p>
+                <button type="button" class="btn btn-secondary">View details &raquo;</button>
+            </div>
+            <div class="col-lg-4">
+                <img src="./nike3.jpg" class="rounded-circle" width="150" height="150" alt="...">
+                <h2>PUPPY</h2>
+                <p>강아지! 귀엽다! 이 강아지는 설명할 것도 없이 몹시 귀여운.</p>
+                <button type="button" class="btn btn-secondary">View details &raquo;</button>
+            </div>
+        </div>
+
+        <!-- featurette -->
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">이 털뭉치의 이름은 나이키입니다.</h2>
+                <p class="lead">풀네임은 김나이키입니다. 줄여서 이키라고 부르고 있습니다. 작은 누나가 이키를 데려올 때 나이키 신발을 신고 있었다는데... 그래서일까요?</p>
+            </div>
+            <div class="col-md-5">
+                <div class="image">
+                    <img src="./nike.jpg" class="featurette-image img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">이 털뭉치는 봄에 태어났습니다.</h2>
+                <p class="lead">정확한 날짜는 비밀입니다. 저는 개견 정보를 함부로 유출하는 사람이 아니거든요.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="image">
+                    <img src="./nike2.jpg" class="featurette-image img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">이 털뭉치는 잠과 산책과 간식을 좋아합니다.</h2>
+                <p class="lead">잠의 소중함을 아는 멍멍이입니다. 가족들이 집에서 잠을 자지 않으면 삐쳐 버릴지도 모릅니다. 외면당하고 싶지 않다면 산책과 간식으로 회유하는 것도 좋은 방법이 될 수 있습니다.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="image">
+                    <img src="./nike3.jpg" class="featurette-image img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+    </div>
+
+    <!-- footer-->
+    <footer class="container">
+        <p class="text-end"><a href="#">Back to top</a>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
